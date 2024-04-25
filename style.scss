@@ -1,0 +1,833 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+.Header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 15vh;
+    margin-bottom: 1rem;
+    z-index: 10;
+    background-color: rgb(11, 6, 40);
+}
+
+@media(max-width:1024px){
+    .Header{
+        margin-top: 0 auto;
+        position: fixed;
+        width: 100%;
+        max-width: 100%;
+        padding: 0.5rem;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+@media(max-width:425px){
+    .Header{
+        padding: 0.5rem;
+
+    }
+}
+
+
+.Column{
+    background-color: transparent;
+    border: none;
+}
+
+.Separar{
+    height: 100%;
+    width:2px;
+    color: rgb(255, 255, 255);
+}
+
+#Dropin{
+    display: none;
+}
+@media(max-width:768px){
+    #Dropin{
+    display: block;
+ }
+}
+
+.Criador{
+    height: auto;
+    text-decoration: underline;
+    text-shadow: 0.1rem 0.1rem 0.5rem white;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.ContainerCriador{
+    display: flex;
+    align-items: end;
+    height: 50vh;
+    justify-content:center;
+
+}
+
+
+.DropdownCel{
+
+    display: none;
+
+}
+
+
+
+@media(max-width:768px){
+ .DropdownCel{
+
+       display: block;
+    
+    }
+}
+ 
+.Corpo{
+    height:auto;
+    background-color: rgb(11, 6, 40);
+}
+
+@media(max-width:1024px){
+    .Corpo{
+        height: auto;
+    }
+}
+
+
+.Icon{
+    align-items: center;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+}
+
+.Logo{
+    width: auto;
+    height: 60px;
+}
+
+@media(max-width:768px){
+    .Logo{
+        width: auto;
+        height:40px;
+    }
+}
+
+a{
+    text-decoration: none;
+}
+
+.ListGP{
+    width: auto;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+}
+
+@media(max-width:768px){
+    .ListGP{
+        display: none;
+    }
+}
+
+.ItemGP{
+    
+    background-color: transparent;
+    border: none;
+    transition: 1s;
+
+    &:hover{
+       transition: 1s;
+       text-decoration: underline greenyellow;
+    }
+}
+
+.H5{
+    cursor: pointer;
+    font-family:CircularSp,spotify-circular,Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    margin: 0;
+    color: aliceblue;
+
+}
+
+#Cruz{
+    display: none;
+}
+
+@media(max-width:1024px){
+    .H5{
+    font-size: 20px;
+ }
+}
+
+.TextHam{
+    color: aliceblue;
+    text-decoration: underline;
+    text-align: center;
+    font-family:CircularSp,spotify-circular,Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+
+.ContainerConteudo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    width: 100%;
+    height: 100vh;
+}
+
+@media(max-width:1024px){
+    .ContainerConteudo{
+        
+        margin-bottom: 5rem;
+        display: flex;
+        width:75%;
+        height: auto;
+        flex-direction: column-reverse;
+    }
+}
+
+@media(max-width:768px){
+    .ContainerConteudo{
+        width: 100%;
+    }
+}
+
+@media(max-width:320px){
+   .ContainerConteudo{
+    padding: 0;
+ }
+}
+
+
+
+.Card1{
+    border: none;
+    margin-top: 3rem;
+    grid-column: 1/4;
+    text-align: start;
+    width:auto;
+    background-color: transparent;
+    height: max-content;
+    padding: 1rem;
+
+}
+.Arrow{
+    display: flex;
+    align-items: center;
+    border: 1px solid;
+    color: rgb(117, 192, 5);
+}
+
+@media(max-width:1024px){
+    .Card1{
+        height: auto;
+        width: auto;
+        text-align: center;
+    }
+}
+
+@media(max-width:768px){
+    .Card1{
+        margin-top: 2rem;
+    }
+}
+
+.TitleCard{
+    font-weight:700;
+    font-size:80px;
+}
+
+@media(max-width:1024px){
+    .TitleCard{
+        font-size:70px;
+        font-weight:600;
+    }
+}
+@media(max-width:425px){
+   .TitleCard{
+    font-size:60px;
+    font-weight: 500;
+ }
+}
+
+.pCard{
+
+    color: rgba(240, 248, 255, 0.518);
+    font-size: 22px;
+}
+
+@media(max-width:425px){
+    .pCard{
+        font-size: medium;
+    }
+}
+
+.btnCard{
+    background-color: rgb(19, 211, 1);
+    width: max-content;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 1rem;
+    border-radius:30px;
+    height: auto;
+    transition: 1s;
+
+    &:hover{
+        transition: 1s;
+        box-shadow: 0.5rem 0.5rem 1rem green;
+        background-color: rgb(19, 255, 2);
+    }
+}
+
+
+.containerPeople{
+    grid-column: 4/8;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat:no-repeat;
+    border-radius: 10%;
+    background-position: top;
+    background-position-y: bottom;
+    background-image: url(https://imagensemoldes.com.br/wp-content/uploads/2020/03/Ilustra%C3%A7%C3%A3o-de-Notas-de-M%C3%BAsica-PNG.png);
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr ;
+    
+}
+
+@media(max-width:1024px){
+    .containerPeople{
+        align-items: center;
+        display: grid;
+        margin-top:20%;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+        grid-template-rows:  1fr 1fr 1fr 1fr ;
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media(max-width:768px){
+    .containerPeople{
+    align-items: center;
+    display: grid;
+    margin-top: 20%;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows:  1fr 1fr 1fr ;
+    width: 100%;
+    height: auto;
+ }
+}
+
+@media(max-width:425px){
+    .containerPeople{
+        margin:25% auto;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows:  1fr 1fr 1fr;
+    }
+}
+
+@media(max-width:320px){
+    .containerPeople{
+        padding: 0;
+        margin: 25% auto;
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
+
+.pessoas{
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+    transition: 2s;
+
+    &:hover{
+        transition: 2s;
+        position: relative;
+        box-shadow: 0.3rem 0.3rem 1rem greenyellow;
+        z-index:1;   
+    }
+}
+
+
+
+@media(max-width:1024px){
+    .pessoas{
+        margin: 0 auto;
+        text-align: center;
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media(max-width:425px){
+    .pessoas{
+        width: 50px;
+        height: 50px;
+    }
+}
+
+#bruno{
+    grid-column: 2/2;
+}
+
+#iris{
+    z-index: 1;
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+
+#jow{
+    grid-column: 6/6;
+}
+@media(max-width:1024px){
+    #jow{
+grid-column: 5/6;
+    }
+}
+
+#beta{
+    grid-column: 7/8;
+    grid-row: 2/3;
+}
+
+#viih{
+    z-index: 1;
+    grid-row: 3/4;
+}
+
+#laira{
+    z-index: 1;
+    grid-row: 3/4;
+    grid-column: 3/4;
+}
+
+#kaah{
+    z-index: 1;
+    grid-column: 5/6;
+    grid-row: 3/4;
+}
+
+.Card2{
+    text-align: center;
+    padding: 1rem;  
+    background-color: rgb(41, 212, 11);  
+    grid-row: 4/5;
+    grid-column:4/5;
+    box-shadow: 0.1rem 0.1rem 10rem  8.5rem rgba(102, 255, 47, 0.45);
+    border: 1px solid black;
+    border-radius: 10%;
+    width:auto;
+    height: max-content;
+}
+
+
+@media(max-width:768px){
+    .Card2{
+        margin: 2rem 2rem 2rem 4rem ;
+        grid-column:2/5;
+        box-shadow: 0.1rem 0.1rem 10rem 4rem   rgb(102, 255, 47, 0.45);
+    }
+}
+
+@media(max-width:425px){
+    .Card2{
+        margin: 1rem 1rem 1rem 1rem;
+        grid-column:3/5;
+        box-shadow: 0.1rem 0.1rem 10rem 4rem   rgb(102, 255, 47, 0.45);
+    }
+}
+
+@media(max-width:320px){
+    .Card2{
+        margin:1rem 1rem 1rem 3rem;
+        grid-column:2/5;
+        box-shadow: 0.1rem 0.1rem 10rem 4rem   rgb(102, 255, 47, 0.45);
+    }
+}
+
+.Card3{
+color: aliceblue;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    grid-column:2/7;
+    grid-row: 5/6;
+}
+
+@media(max-width:768px){
+    .Card{
+        grid-column:1/8;
+    }
+}
+
+@media(max-width:320px){
+    .Card3{
+        margin: 0 0 0 1rem;
+        align-items: center;
+        grid-column:1/7;
+    }
+}
+
+.TitleH3{
+    font-size: 40px;
+    font-weight: 700;
+}
+@media(max-width:425px){
+    .TitleH3{
+        font-size: 30px;
+    }
+}
+
+@media(max-width:320px){
+    .TitleH3{
+    font-size: 28px;
+ }
+}
+
+.TextC3{
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.799);
+}
+@media(max-width:320px){
+    .TextC3{
+    font-size: 25px;
+ }
+}
+
+.Price{
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight:700;
+}
+
+@media(max-width:320px){
+    .Price{
+    font-size: 28px;
+ }
+}
+
+.LogoSpoti{
+    box-shadow: 0.1rem 0.1rem 10rem  8.5rem rgba(102, 255, 47, 0.45);
+    border-radius: 100%;
+    background-color:rgb(11, 6, 40);    ;
+    margin: 0;
+    border: 1px solid black;
+    height: 50%;
+    width:50%;
+}
+
+@media(max-width:768px){
+    .LogoSpoti{
+        margin-top: 3rem;
+    width: 40%;
+    height: 40%;
+    box-shadow: 0.1rem 0.1rem 10rem 4rem   rgba(102, 255, 47, 0.598);
+
+
+ }
+}
+
+@media(max-width:425px){
+    .LogoSpoti{
+        
+        width:30%;
+        height: 30%;
+        box-shadow: 0.1rem 0.1rem 10rem 4rem   rgba(102, 255, 47, 0.676);
+
+    }
+}
+
+
+.footer{
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+@media(max-width:1024px){
+    .footer{
+        border-top: 2px solid white;
+    }
+}
+
+.Sociais{
+   
+    padding: 1rem;
+    height: 20vh;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.361);
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+@media(max-width:768px){
+    .Sociais{
+        border-top: 2px solid white;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.ListSO{
+    margin: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+.ItemSO{
+background-color: transparent;
+border: none;
+}
+
+.Redes{
+margin: auto;
+}
+
+.Follow{
+    font-family: 'Pacifico';
+    font-size: xx-large;
+    color: aliceblue;
+    text-decoration: underline;
+}
+
+@media(max-width:768px){
+.Follow{
+    font-size: x-large;
+}
+}
+
+
+
+
+.labelF{
+    margin:auto;
+    width: max-content;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+@media(max-width:768px){
+.labelF{
+    width: auto;
+    text-align: center;
+    margin-bottom: 3rem;
+ }
+}
+
+.TitleFooter{
+    font-family: sans-serif;
+    color: aliceblue;
+}
+
+@media(max-width:425px){
+    .TitleFooter{
+        margin: 0.5rem;
+    font-weight:600;
+    font-size: large;
+
+ }
+}
+
+.TextFooter{
+    font-size: 18px;
+    color: rgba(240, 248, 255, 0.418);
+}
+
+@media(max-width:425px){
+    .TextFooter{
+        font-size: medium;
+    }
+}
+
+.btnFooter{
+    width: auto;
+    height: auto;
+    background-color: aliceblue;
+    border-radius:30px;
+    font-size: 20px;
+    font-weight: 600;
+    border: 1px solid white;
+    padding: 1rem;
+    color: rgb(0, 0, 0);
+}
+
+@media(max-width:425px){
+    .btnFooter{
+        padding: 0.8rem;
+        font-size: large;
+    }
+}
+
+
+//
+
+//
+
+//
+
+//
+
+//
+                // ESTILO DA SEGUNDA PAGINA !!!!!!!!!!!!!!!!
+//
+
+//
+
+//
+
+//
+
+//
+
+//
+
+
+.HeaderFree{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 15vh;
+    margin: 0 auto;
+    z-index: 10;
+    background-color: rgb(11, 6, 40);
+}
+
+@media(max-width:1024px){
+    .HeaderFree{
+        margin-top: 0 auto;
+        position: fixed;
+        width: 100%;
+        max-width: 100%;
+        padding: 0.5rem;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.containerFree{
+//background-image: url(https://images.alphacoders.com/985/985237.jpg);
+background-image: linear-gradient(45deg , rgb(165, 165, 165) ,rgb(68, 68, 68), black );
+background-size: cover;
+border-left: 2px solid white;
+background-repeat: no-repeat;
+background-position: center;
+display:flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+@media(max-width:768px){
+    .containerFree{
+        display: flex;
+        flex-direction:column;
+    }
+}
+
+.ContainerGeral{
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+}
+
+.Santos{
+    background-color: rgb(11, 6, 40);
+}
+
+.CardFree{
+    display: flex; 
+    flex-direction: row;
+    margin: 2rem;
+    width: 75%;
+    height:30vh;
+}
+@media(max-width:1024px){
+    .CardFree{
+        margin-top: 5rem;
+        height: 30vh;
+    }
+}
+
+@media(max-width:768px){
+    .CardFree{
+        width: 90%;
+        align-items: center;
+        padding: 0.5rem;
+        display: flex;
+        height: auto;
+        flex-direction: column;
+    }
+}
+
+
+.LogoFree{   
+    
+    width:25%;
+    height: 100%;
+
+}
+@media(max-width:768px){
+   .LogoFree{
+    width: 50%;
+ }
+}
+
+
+.FaixaAudio{
+    width: 95%;
+    padding:0.5rem;
+    margin: 0.5rem 0.5rem;
+    border: 1px solid black;
+    border-radius:10px;
+}
+
+@media(max-width:768px){
+    .FaixaAudio{
+        width: 100%;
+        margin: auto auto 0.5rem auto;
+    }
+}
+
+.TitleFree{
+    font-family: 'Kdam thmor Pro', sans-serif;
+    font-weight: 600;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 30px;
+}
+
+@media(max-width:768px){
+    .TitleFree{
+        font-size: 20px;
+        font-weight: 500;
+    }
+}
+
+.Show{
+    margin: 0 auto;
+    width: auto;
+    padding: 0.5rem;
+    border: 1px solid black;
+}
+
+.Fechar {
+    display: none;
+}
+
+.Legend{
+    display: none;
+}
